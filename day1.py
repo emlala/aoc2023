@@ -4,7 +4,7 @@
 
 import re
 
-file1 = open('./data/data-1-1.txt', 'r')
+file1 = open('./data/day1-data.txt', 'r')
 lines = file1.readlines()
 file1.close()
 
