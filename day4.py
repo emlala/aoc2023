@@ -46,9 +46,8 @@ def get_result(lines):
         for card in line:
             card_count += 1
             matches = check_matches(card)
-            match_count = len(matches)
-            copies = match_count
-            if match_count > 0:
+            copies = len(matches)
+            if copies > 0:
                 # add a copy to as many of the following lines as is the value of match_count
                 while copies > 0:
                     copy = lines[index+copies][0]
