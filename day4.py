@@ -47,14 +47,13 @@ def get_result(lines):
             card_count += 1
             matches = check_matches(card)
             copies = len(matches)
-            if copies > 0:
-                # add a copy to as many of the following lines as is the value of match_count
-                while copies > 0:
-                    copy = lines[index+copies][0]
-                    lines[index+copies].append(copy)
-                    copies -= 1
-                # points = calculate_points(matches)
-                # sum += points
+            # add a copy to as many of the following lines as is the value of match_count
+            while copies > 0:
+                copy = lines[index+copies][0]
+                lines[index+copies].append(copy)
+                copies -= 1
+            # points = calculate_points(matches)
+            # sum += points
 
     return card_count
 
